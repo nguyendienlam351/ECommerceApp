@@ -27,7 +27,7 @@ import io.paperdb.Paper;
 public class LoginActivity extends AppCompatActivity {
     private EditText inputPhoneNumber, inputPassword;
     private Button loginButton;
-    private com.rey.material.widget.CheckBox chkboxRemeberMe;
+    private CheckBox chkboxRemeberMe;
     private TextView adminLink, notAdminLink;
 
     private String panelDbName = "Users";
@@ -44,7 +44,7 @@ public class LoginActivity extends AppCompatActivity {
         loginButton = (Button) findViewById(R.id.login_btn);
         adminLink = (TextView) findViewById(R.id.admin_panel_link);
         notAdminLink = (TextView) findViewById(R.id.not_admin_panel_link);
-        chkboxRemeberMe = (com.rey.material.widget.CheckBox) findViewById(R.id.remember_me_chkb);
+        chkboxRemeberMe = (CheckBox) findViewById(R.id.remember_me_chkb);
 
         Paper.init(this);
 
@@ -123,7 +123,7 @@ public class LoginActivity extends AppCompatActivity {
 
                                 loadingBar.dismiss();
 
-                                Intent intent = new Intent(LoginActivity.this, AdminAddNewProductActivity.class);
+                                Intent intent = new Intent(LoginActivity.this, AdminCategoryActivity.class);
                                 startActivity(intent);
                             } else if (panelDbName.equals("Users")) {
                                 Toast.makeText(LoginActivity.this,
