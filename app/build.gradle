@@ -63,6 +63,13 @@ dependencies {
     //pilgr Paper
     implementation 'io.github.pilgr:paperdb:2.7.1'
 
+    //hdodenhof circleimageview
     implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+    // FirebaseUI for Firebase Realtime Database
+    implementation 'com.firebaseui:firebase-ui-database:8.0.0'
+
+    //squareup picasso
+    implementation 'com.squareup.picasso:picasso:2.71828'
 
 }
