@@ -72,4 +72,7 @@ dependencies {
     //squareup picasso
     implementation 'com.squareup.picasso:picasso:2.71828'
 
+    //ArthurHub Android-Image-Cropper
+    implementation 'com.theartofdev.edmodo:android-image-cropper:2.8.+'
+
 }
