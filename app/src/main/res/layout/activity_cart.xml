@@ -16,7 +16,7 @@
             android:id="@+id/total_price"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Total Price = "
+            android:text="Total Price:  "
             android:textColor="@color/white"
             android:textSize="20dp"
             android:textAlignment="center"
@@ -27,8 +27,8 @@
         android:id="@+id/cart_list"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/rl11"
-        android:layout_above="@+id/next_process_btn"/>
+        android:layout_above="@+id/next_process_btn"
+        android:layout_below="@+id/rl11" />
 
 
     <Button
