@@ -28,7 +28,7 @@ public class LoginActivity extends AppCompatActivity {
     private EditText inputPhoneNumber, inputPassword;
     private Button loginButton;
     private CheckBox chkboxRemeberMe;
-    private TextView adminLink, notAdminLink;
+    private TextView adminLink, notAdminLink, forgetPasswordLink;
 
     private String panelDbName = "Users";
 
@@ -44,6 +44,7 @@ public class LoginActivity extends AppCompatActivity {
         loginButton = (Button) findViewById(R.id.login_btn);
         adminLink = (TextView) findViewById(R.id.admin_panel_link);
         notAdminLink = (TextView) findViewById(R.id.not_admin_panel_link);
+        forgetPasswordLink = (TextView) findViewById(R.id.forget_password_link);
         chkboxRemeberMe = (CheckBox) findViewById(R.id.remember_me_chkb);
 
         Paper.init(this);
@@ -54,6 +55,15 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 loginUser();
+            }
+        });
+
+        forgetPasswordLink.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(LoginActivity.this, ResetPasswordActivity.class);
+                intent.putExtra("login", "check");
+                startActivity(intent);
             }
         });
 

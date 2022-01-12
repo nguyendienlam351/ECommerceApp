@@ -16,10 +16,10 @@
             android:id="@+id/product_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Product name"
+            android:text="Product Name"
             android:textAlignment="center"
-            android:textSize="20sp"
             android:textColor="@color/colorPrimaryDark"
+            android:textSize="20sp"
             android:textStyle="bold" />
 
         <ImageView
@@ -46,10 +46,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/product_price"
-            android:text="Product name"
+            android:text="Product Description"
             android:textAlignment="center"
-            android:textSize="16sp"
             android:textColor="@color/colorPrimaryDark"
+            android:textSize="16sp"
             android:textStyle="bold" />
     </RelativeLayout>
 

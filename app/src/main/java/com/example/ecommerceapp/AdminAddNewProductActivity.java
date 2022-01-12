@@ -90,7 +90,7 @@ public class AdminAddNewProductActivity extends AppCompatActivity {
         }
         else if (TextUtils.isEmpty(price))
         {
-            Toast.makeText(this, "Please write product Price.", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Please write product price.", Toast.LENGTH_SHORT).show();
         }
         else if (TextUtils.isEmpty(Pname))
         {

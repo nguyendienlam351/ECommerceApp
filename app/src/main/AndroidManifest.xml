@@ -15,6 +15,12 @@
         android:theme="@style/Theme.ECommerceApp"
         tools:replace="android:theme">
         <activity
+            android:name=".ResetPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminMaintainProductsActivity"
+            android:exported="false" />
+        <activity
             android:name=".SearchProductsActivity"
             android:exported="false" />
         <activity
